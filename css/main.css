@@ -7,11 +7,30 @@ body {
   background: black;
 }
 
-.wrapper {
+.outter-wrapper {
+  width: 100%;
+  height: 100%;
   position: absolute;
   color: white;
   z-index: 1;
-  padding: 20px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.heading-frame h3 {
+  margin-top: 0px;
+}
+
+.content-wrapper {
+  margin: 15px;
+  background-color: #80808030;
+  align-content: center;
+  max-width: 650px;
+  padding: 30px;
+  border-radius: 5px;
 }
 
 button {
@@ -23,13 +42,30 @@ button {
   border: 1px solid white;
 }
 
-button:active {
-  background-color: #8d8d8d66;
+ul.icons li a {
+  border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #ffffff;
+    display: inline-block;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    width: 2.25rem;
+    text-decoration: none;
+    color: white;
 }
 
-.heading {
-  text-align: center;
+ul.icons li:nth-child(2) {
+  margin: 0px 10px;
+}
+.icons {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
 
+button:active {
+  background-color: #8d8d8d66;
 }
 
 .nav {
@@ -37,11 +73,6 @@ button:active {
 }
 .nav a {
   color: white;
-}
-
-.headshot {
-  border-radius: 50%;
-  text-align: center;
 }
 
 canvas {
