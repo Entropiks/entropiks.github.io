@@ -41,6 +41,7 @@ body {
 } */
 
 button {
+  cursor: pointer;
   width: 120px;
   box-sizing: border-box;
   color: #fff;
