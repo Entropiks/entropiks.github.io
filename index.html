@@ -17,37 +17,73 @@
 </head>
 
 <body>
-  <div class="outter-wrapper">
-    <div class="content-wrapper">
-    <div class="heading">
-      <div class="heading-frame">
-        <h1>michael corseri</h1>
-        <!-- <h3>Web Developer</h3> -->
-        <!-- <a href="https://www.github.com/entropiks">Github</a> -->
+  <section id="home">
+    <div class="outter-wrapper">
+      <div class="content-wrapper home-wrapper">
+        <div class="heading">
+          <div class="heading-frame">
+            <h1>michael corseri</h1>
+          </div>
+        </div>
+
+        <div class="intro">
+          <div class="intro-buttons">
+            <button onclick="hideDiv()" class="intro"><p>Projects</p></button>
+            <button class="intro"><p><a class="resume" href="./resumes/resume_v3.pdf" target="_blank">Resume</a></p></button>
+          </div>
+          <p>Hey there! My name is Michael Corseri and I am a Front-End Engineer currently searching for new and exciting opportunities. I most recently worked at Bio-Rad as a lead Web Developer and have previously worked for STN Digital, Newport Naval Base and some freelance on the side. Check out my </p>
+          <!-- <section class="info">
+            <button class="intro-short"><a href="#">Projects</a></p>
+            <p><a href="#">Resume</a></p>
+          </section> -->
+          
+          <ul class="icons">
+            <li><a href="https://www.github.com/entropiks" target="_blank" class="fab fa-github"></a></li>
+            <li><a href="https://www.linkedin.com/in/michael-corseri-98489794/" target="_blank" class="fab fa-linkedin"></a></li>
+            <li><a href="https://www.instagram.com/mcorseri/" target="_blank" class="fab fa-instagram"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
-    <div class="intro">
-      <!-- <div class="nav">
-        <a href="https://github.com/Entropiks" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/corseri/" target="_blank">LinkedIn</a>
-        <a href="#" target="_blank">Resume</a>
-      </div> -->
-      <!-- <div class="intro-buttons">
-        <button class="intro-short active"><p>Short</p></button>
-        <button class="intro-long"><p>Long</p></button>
-        <button class="intro-fun"><p>Fun</p></button>
-      </div> -->
-      <p>Hey there! My name is Michael Corseri and I am a Front-End Developer currently searching for new and exciting opportunities. I most recently worked at Bio-Rad as a lead Web Developer and have previously worked for STN Digital, Newport Naval Base and some freelance on the side. Check out my <a class="resume" href="./resumes/resume_v3.pdf" target="_blank">resume here</a></p>
-      <ul class="icons">
-        <li><a href="https://www.github.com/entropiks" target="_blank" class="fab fa-github"></a></li>
-        <li><a href="https://www.linkedin.com/in/michael-corseri-98489794/" target="_blank" class="fab fa-linkedin"></a></li>
-        <li><a href="https://www.instagram.com/mcorseri/" target="_blank" class="fab fa-instagram"></a></li>
-        
-      </ul>
+  </section>
+  <section id="project-section">
+    <div class="outter-wrapper">
+      <div class="content-wrapper">
+        <div class="heading">
+          <div class="heading-frame">
+            <h1>projects</h1>
+            <div class="intro-buttons">
+              <button onclick="goHome()" class="intro"><p>Home</p></button>
+            </div>
+            <p>These are only some of the projects I have worked on. There is a mix of personal as well as professional projects created with various technologies.</p>
+            
+            <div class="project-wrapper">
+              <div class="project">
+                <h5><a href="https://www.flmr.app" target="_blank">FLMR (work in progress)</a></h5>
+                <div class="techtags">React, Firebase, Tailwind, Webpack, Styled Components</div> 
+                <a href="https://github.com/Entropiks/FLMR" target="_blank" class="fab fa-github ico-git"></a>
+              </div> 
+            </div>
+            <div class="project-wrapper">
+              <div class="project">
+                <h5><a href="https://moovies-b7d30.web.app/" target="_blank">Netflix Clone</a></h5>
+                <div class="techtags">React, TheMovieDB API</div> 
+                <a href="https://github.com/Entropiks/NetflixClone" target="_blank" class="fab fa-github ico-git"></a>
+              </div> 
+            </div>
+            <div class="project-wrapper">
+              <div class="project">
+                <h5><a href="https://prettytodo.netlify.app/" target="_blank">Visually Appealing To Do List</a></h5>
+                <div class="techtags">React, Hooks, LocalStorage</div> 
+                <a href="https://github.com/Entropiks/firebase_todo" target="_blank" class="fab fa-github ico-git"></a>
+              </div> 
+            </div>
+   
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 </body>
 
 <script src="js/three.js"></script>
@@ -159,4 +195,5 @@
   init();
   </script>
   <script src="https://kit.fontawesome.com/af6d5eb42e.js" crossorigin="anonymous"></script>
+  <script src="/js/transitions.js"></script>
 </html>

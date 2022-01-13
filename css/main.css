@@ -25,13 +25,20 @@ body {
 }
 
 .content-wrapper {
+  display: block;
   margin: 15px;
   background-color: #80808030;
   align-content: center;
   max-width: 650px;
+  min-height: 280px;
   padding: 30px;
   border-radius: 5px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
+
+/* .content-wrapper:hover {
+  transform: rotate(5deg);
+} */
 
 button {
   width: 120px;
@@ -39,7 +46,8 @@ button {
   color: #fff;
   background-color: transparent;
   line-height: 5px;
-  border: 1px solid white;
+  border-radius: 3px;
+  border: 1px solid rgb(175, 175, 175);
 }
 
 ul.icons li a {
@@ -64,7 +72,8 @@ ul.icons li:nth-child(2) {
   padding: 0px;
 }
 
-button:active {
+button:active, 
+button:hover {
   background-color: #8d8d8d66;
 }
 
@@ -76,10 +85,68 @@ button:active {
 }
 
 .resume {
+  text-decoration: none;
   color: white;
 }
 
 canvas {
   position: fixed;
   top: 0;
+}
+
+.intro-buttons {
+  margin-bottom: 15px;
+}
+
+#project-section {
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+  display: none;
+}
+
+.project-wrapper {
+  border: 1px solid #777777;
+  padding: 0px 15px;
+  border-radius: 3px;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.project {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-radius: 3px;
+}
+
+.project h5 {
+  margin: 0;
+}
+
+.project a {
+  color: white;
+}
+
+.project p {
+  margin: 0;
+}
+
+.project-info {
+  font-size: 12px;
+}
+
+/* Customized Icon Styles */
+.ico-git {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+/* Meta Info tags on projects section */
+.techtags {
+  font-size: 12px;
+  /* border: 1px solid #ea8042a8;
+  padding: 5px;
+  border-radius: 3px; */
 }
