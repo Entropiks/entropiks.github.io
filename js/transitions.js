@@ -1,12 +1,15 @@
 let homeSection = document.getElementsByClassName("content-wrapper home-wrapper")[0];
 let projectSection = document.getElementById("project-section");
-console.log(projectSection);
 
-function hideDiv() {
+let goProjectSection = document.getElementById("project-link");
+let goHomeSection = document.getElementById("project-link-home");
+
+goProjectSection.onclick = goProjects;
+goHomeSection.onclick = goHome;
+
+function goProjects() {
   homeSection.style.display = "none";
   projectSection.style.display = "flex";
-  // projectSection.style.transition = "all 2s";
-  // homeSection.style.transform = "rotate(70deg)";
 }
 function goHome() {
   homeSection.style.display = "block";
