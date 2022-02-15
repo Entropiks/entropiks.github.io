@@ -30,7 +30,6 @@ body {
   background-color: #80808030;
   align-content: center;
   max-width: 650px;
-  min-height: 280px;
   padding: 30px;
   border-radius: 5px;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
