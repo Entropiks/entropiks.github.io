@@ -96,7 +96,9 @@ canvas {
   position: fixed;
   top: 0;
 }
-
+.intro a {
+  color: #ff8a00;
+}
 .intro-buttons {
   margin-bottom: 15px;
 }
