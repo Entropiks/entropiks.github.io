@@ -35,10 +35,6 @@ body {
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-/* .content-wrapper:hover {
-  transform: rotate(5deg);
-} */
-
 button {
   cursor: pointer;
   width: 120px;
@@ -99,6 +95,23 @@ canvas {
 .intro a {
   color: #ff8a00;
 }
+
+@media screen and (max-width: 525px) {
+  .intro p {
+    font-size: 14px;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.built-with {
+  font-size: 8px !important;
+}
+
 .intro-buttons {
   margin-bottom: 15px;
 }
